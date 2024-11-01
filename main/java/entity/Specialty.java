@@ -9,19 +9,15 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-public class Clinic {
+public class Specialty {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String address;
-    private String city;
-    private String phoneNumber;
 
-    @OneToMany(mappedBy = "clinic", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "specialty", cascade = CascadeType.ALL)
     private List<Doctor> doctors;
 
 
 }
-

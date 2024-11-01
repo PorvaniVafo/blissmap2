@@ -18,16 +18,16 @@ public class Doctor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(name = "name")
+    @Column
     String name;
 
-    @Column(name = "rating")
+    @Column
     Double rating;
 
-    @Column(name = "phoneNumber")
+    @Column
     String phoneNumber;
 
-    @Column(name = "email")
+    @Column
     String email;
 
 //    @ManyToOne

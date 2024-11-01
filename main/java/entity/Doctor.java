@@ -30,14 +30,14 @@ public class Doctor {
     @Column(name = "email")
     String email;
 
-    @ManyToOne
-    @JoinColumn(name = "specialty_id", nullable = false)
-    Specialty specialty;
-
-    @ManyToOne
-    @JoinColumn(name = "clinic_id", nullable = false)
-    Clinic clinic;
-
-    @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL)
-    List<Review> reviews;
+//    @ManyToOne
+//    @JoinColumn(name = "specialty_id", nullable = false)
+//    Specialty specialty;
+//
+//    @ManyToOne
+//    @JoinColumn(name = "clinic_id", nullable = false)
+//    Clinic clinic;
+//
+//    @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL)
+//    List<Review> reviews;
 }

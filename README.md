@@ -81,13 +81,22 @@ mvn spring-boot:run
 Используйте Postman для тестирования API. Настройте Basic Auth для защищенных маршрутов.
 Маршрут	HTTP-метод	Описание
 /api/users	POST	Создать пользователя
+
 /api/users	GET	Получить всех пользователей
+
 /api/doctors	POST	Создать врача
+
 /api/doctors	GET	Получить всех врачей
+
 /api/clinics	POST	Создать клинику
+
 /api/clinics	GET	Получить все клиники
+
 /api/reviews	POST	Создать отзыв
+
 /api/reviews	GET	Получить все отзывы
+
 /api/specialties	POST	Создать специальность
+
 /api/specialties	GET	Получить все специальности
 

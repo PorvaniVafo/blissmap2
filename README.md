@@ -79,28 +79,15 @@ mvn spring-boot:run
 
 ## Тестирование API
 Используйте Postman для тестирования API. Настройте Basic Auth для защищенных маршрутов.
-
-Username: admin
-
-Password: password123
-
-Разрешение ошибок
-
-Ошибка 401 Unauthorized
-
-Убедитесь, что вы используете правильные учетные данные.
-
-Проверьте наличие пользователя в базе данных:
-
-sql
-
-Копировать код
-
-SELECT * FROM app_user;
-
-Ошибка подключения к базе данных
-
-Проверьте настройки в application.properties.
-
-Убедитесь, что PostgreSQL запущен и настроен.
+Маршрут	HTTP-метод	Описание
+/api/users	POST	Создать пользователя
+/api/users	GET	Получить всех пользователей
+/api/doctors	POST	Создать врача
+/api/doctors	GET	Получить всех врачей
+/api/clinics	POST	Создать клинику
+/api/clinics	GET	Получить все клиники
+/api/reviews	POST	Создать отзыв
+/api/reviews	GET	Получить все отзывы
+/api/specialties	POST	Создать специальность
+/api/specialties	GET	Получить все специальности
 
